@@ -1,0 +1,283 @@
+% arguments: title, file, x label, y label, max value, tic distance (difference between tics on the axis)
+\tikzset{marks/.style={only marks, mark size = 1pt, solid, mark options={draw=red, fill=red!70!white, draw opacity=1},line width=0pt, opacity=1}}
+\pgfplotsset{compat=1.18}
+
+\newcommand{\plotData}[8]{
+    \begin{tikzpicture}
+        \tiny
+        \begin{axis}[height=0.45\textwidth, 
+               width=0.45\textwidth,
+               title={#1},
+               xlabel={#3},
+               ylabel={#4},
+               every axis title/.append style={
+                 at={(0.5,.95)}
+               },
+               every axis y label/.style={
+                    at={(ticklabel cs:0.5)},rotate=90, anchor=near ticklabel,
+               },
+               every axis x label/.style={
+                    at={(ticklabel cs:0.5)}, anchor=near ticklabel,
+               },
+            %    ymajorgrids=true, grid style=dashed,
+               xmin=0,
+               xmax=#5,
+               ymin=0,
+               ymax=#5,
+               domain = 0:#5,
+               grid=major,
+               xtick distance=#6,
+               ytick distance=#6,
+			   xticklabel={%
+                \pgfmathparse{mod(\ticknum,2)==1 ? "\pgfmathprintnumber{\tick}" : ""}%
+                \pgfmathresult
+				},
+				yticklabel={%
+					\pgfmathparse{mod(\ticknum,2)==1 ? "\pgfmathprintnumber{\tick}" : ""}%
+					\pgfmathresult
+				},
+            	xticklabel style={rotate=45, anchor=north east, font=\tiny}
+              ]
+            \addplot[marks] table [x index=#7, y index=#8, col sep=semicolon, ignore chars = {\#, \%, \_, \>, \<} ]  {#2}; 
+            \addplot[draw=gray!70!white] {x};
+			% % y = 0 (horizontal axis)
+			% \addplot[black, thick] coordinates {(-#5,0) (#5,0)};
+
+			% % x = 0 (vertical axis)
+			% \addplot[black, thick] coordinates {(0,-#5) (0,#5)};
+        \end{axis}
+    \end{tikzpicture}
+}
+
+\newcommand{\plotDataFullStats}[7]{
+	\begin{tikzpicture}
+		\tiny
+		\begin{axis}[height=0.45\textwidth, 
+			width=0.45\textwidth,
+			title={#1},
+			xlabel={#3},
+			ylabel={#4},
+			every axis title/.append style={
+				at={(0.5,.95)}
+			},
+			every axis y label/.style={
+				at={(ticklabel cs:0.5)},rotate=90, anchor=near ticklabel,
+			},
+			every axis x label/.style={
+				at={(ticklabel cs:0.5)}, anchor=near ticklabel,
+			},
+			%ymajorgrids=true, grid style=dashed,
+			xmin=0,
+			xmax=#5,
+			ymin=0,
+			ymax=#6,
+			domain = 0:#5,
+			grid=major,
+			xtick distance=#7,
+			ytick distance=#7,
+			%               xticklabels={,,}
+			]
+			\addplot[marks] table [y index=18, x index=17, col sep=semicolon]  {#2}; 
+			%\addplot[draw=gray!70!white] {x};
+		\end{axis}
+	\end{tikzpicture}
+}
+
+% log version
+\newcommand{\plotDataLog}[5]{
+    \begin{tikzpicture}
+        \tiny
+        \begin{axis}[height=0.45\textwidth, 
+               width=0.45\textwidth,
+               title={#1},
+               xlabel={#3},
+               ylabel={#4},
+               ymode=log,
+               xmode=log,
+               every axis title/.append style={
+                 at={(0.5,.95)}
+               },
+               every axis y label/.style={
+                    at={(ticklabel cs:0.5)},rotate=90, anchor=near ticklabel,
+               },
+               every axis x label/.style={
+                    at={(ticklabel cs:0.5)}, anchor=near ticklabel,
+               },
+               %ymajorgrids=true, grid style=dashed,
+               xmin=1,
+               xmax=#5,
+               ymin=1,
+               ymax=#5,
+               domain = 0.1:#5,
+               grid=major,
+              ]
+            \addplot[marks] table [y index = 1, x index = 0, col sep=semicolon]  {#2}; 
+            \addplot[draw=gray!50!white] {x};
+        \end{axis}
+    \end{tikzpicture}
+}
+
+\newcommand{\plotDataDynamicMarker}[6]{
+	\begin{tikzpicture}
+		\tiny
+		\begin{axis}[height=0.45\textwidth, 
+			width=0.45\textwidth,
+			title={#1},
+			xlabel={#3},
+			ylabel={#4},
+			every axis title/.append style={
+				at={(0.5,.95)}
+			},
+			every axis y label/.style={
+				at={(ticklabel cs:0.5)},rotate=90, anchor=near ticklabel,
+			},
+			every axis x label/.style={
+				at={(ticklabel cs:0.5)}, anchor=near ticklabel,
+			},
+			%ymajorgrids=true, grid style=dashed,
+			xmin=0,
+			xmax=#5,
+			ymin=0,
+			ymax=#5,
+			domain = 0:#5,
+			grid=major,
+			xtick distance=#6,
+			ytick distance=#6,
+			%               xticklabels={,,}
+			]
+			\addplot[
+			marks,
+			scatter=true,
+			point meta=explicit symbolic,
+			scatter/@pre marker code/.style={/tikz/mark size=1+sqrt(\pgfplotspointmeta)/4},
+			scatter/@post marker code/.style={}
+			] table [y index=1, x index=0, col sep=semicolon, meta index=2]  {#2}; 
+			\addplot[draw=gray!70!white] {x};
+		\end{axis}
+	\end{tikzpicture}
+}
+
+\newcommand{\plotDataLogDynamicMarker}[6]{
+	\begin{tikzpicture}
+		\tiny
+		\begin{axis}[height=0.45\textwidth, 
+			width=0.45\textwidth,
+			title={#1},
+			xlabel={#3},
+			ylabel={#4},
+      ymode=log,
+			xmode=log,
+			every axis title/.append style={
+				at={(0.5,.95)}
+			},
+			every axis y label/.style={
+				at={(ticklabel cs:0.5)},rotate=90, anchor=near ticklabel,
+			},
+			every axis x label/.style={
+				at={(ticklabel cs:0.5)}, anchor=near ticklabel,
+			},
+			%ymajorgrids=true, grid style=dashed,
+			xmin=0.01,
+			xmax=#5,
+			ymin=0.01,
+			ymax=#5,
+			domain = 0.01:#5,
+			grid=major,
+			%               xticklabels={,,}
+			]
+			\addplot[
+			marks,
+			scatter=true,
+			point meta=explicit symbolic,
+			scatter/@pre marker code/.style={/tikz/mark size=1.5*ln(\pgfplotspointmeta)},
+			scatter/@post marker code/.style={}
+			] table [y index=1, x index=0, col sep=semicolon, meta index=2]  {#2};
+			\addplot[draw=gray!70!white] {x};
+		\end{axis}
+	\end{tikzpicture}
+}
+
+\newcommand{\plotBarPlot}[2]{
+	\pgfplotstableread[col sep=semicolon]{#1}\datatable
+
+	\pgfplotstablecreatecol[
+		create col/assign/.code={
+			\edef\entry{%
+			\thisrow{partition}\\
+			{\noexpand\textcolor{blue}{\thisrow{opt1_Complete_Runs}/\thisrow{opt1_timeouts}}}\:
+			{\noexpand\textcolor{orange}{\thisrow{opt2_Complete_Runs}/\thisrow{opt2_timeouts}}}\:
+			{\noexpand\textcolor{green!60!black}{\thisrow{opt3_Complete_Runs}/\thisrow{opt3_timeouts}}}%
+			}%
+			\pgfkeyslet{/pgfplots/table/create col/next content}\entry
+		}
+	]{label}{\datatable}
+
+
+	\begin{tikzpicture}
+		\begin{axis}[
+			title=Runtime Benchmarking (227),
+			ybar,
+			bar width=6pt,
+			width=16cm,
+			height=9cm,
+			ylabel=Average Runtime (ms),
+			xlabel=Axiom Count,
+			ymin=0,
+			ymax=90001,
+			x tick label style={align=center, rotate=45, anchor=east, font=\small, transform shape=false},
+			% enlarge x limits=0.15,
+			legend style={at={(0.5,-0.35)}, anchor=north, legend columns=-1},
+			ymajorgrids=true,
+			grid style=dashed,
+			xtick=data,
+			xticklabels from table={\datatable}{label},
+			ytick distance=2500,
+			yticklabel={%
+					\pgfmathparse{mod(\ticknum,2)==1 ? "\pgfmathprintnumber{\tick}" : ""}%
+					\pgfmathresult
+				},
+		]
+		\addplot+[fill=blue] table [x expr=\coordindex, y=opt1_Average_Runtime, col sep=semicolon] {\datatable};
+		\addplot+[fill=orange] table [x expr=\coordindex, y=opt2_Average_Runtime, col sep=semicolon] {\datatable};
+		\addplot+[fill=green!60!black] table [x expr=\coordindex, y=opt3_Average_Runtime, col sep=semicolon] {\datatable};
+		\legend{Entailment Probability, Hierarchy Difference, Hamming Distance}
+		\end{axis}
+	\end{tikzpicture}%
+}
+
+\newcommand{\columnsum}[3]{
+	\pgfplotstableread[col sep=semicolon, ignore chars={\#,\%,\_,\>,\<}]{#1}\loadedtable
+	\pgfplotstablegetrowsof{\loadedtable}
+	\pgfmathtruncatemacro{\numrows}{\pgfplotsretval}
+	\pgfmathsetmacro{#3}{0}
+	 \pgfmathsetmacro{\localsum}{0}
+
+    \pgfplotstableforeachcolumnelement{[index] #2}\of\loadedtable\as\cell{%
+        \pgfmathparse{\localsum+\cell}%
+        \xdef\localsum{\pgfmathresult}%
+    }
+
+    \global\let#3\localsum
+}
+
+\newcommand{\columnmean}[3]{
+	\pgfplotstableread[col sep=semicolon, ignore chars={\#,\%,\_,\>,\<}]{#1}\loadedtable
+	\pgfplotstablegetrowsof{\loadedtable}
+	\pgfmathtruncatemacro{\numrows}{\pgfplotsretval}
+	\pgfmathsetmacro{#3}{0}
+	\pgfmathsetmacro{\localmean}{0}
+
+	\pgfplotstableforeachcolumnelement{[index] #2}\of\loadedtable\as\cell{%
+		\pgfmathparse{\localmean+\cell}%
+		\xdef\localmean{\pgfmathresult}%
+	}
+	\pgfmathsetmacro{#3}{\localmean/\numrows}
+}
+
+\newcommand{\rowCount}[2]{
+	\pgfplotstableread[col sep=semicolon, ignore chars={\#,\%,\_,\>,\<}]{#1}\loadedtable
+	\pgfplotstablegetrowsof{\loadedtable}
+	\pgfmathtruncatemacro{\numrows}{\pgfplotsretval}
+	\pgfmathsetmacro{#2}{\numrows}
+}
+

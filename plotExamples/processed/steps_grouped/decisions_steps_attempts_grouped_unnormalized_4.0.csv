@@ -1,0 +1,8 @@
+Example;Defect;option1;option2;option3;mix;user;user_attempts
+ore_ont_8937.owl;SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC20> <http://www.absoluteiri.edu/RELAPPROXC41>);1.0;1.0;1.0;1;1.0;4.0
+ore_ont_11452.owl;SubClassOf(<http://purl.obolibrary.org/obo/MP_0005325> <http://purl.obolibrary.org/obo/MP_0002135>);5.0;1.0;1.0;1;1.0;4.0
+ore_ont_4732.owl;SubClassOf(<http://purl.obolibrary.org/obo/MP_0005563> <http://purl.obolibrary.org/obo/MP_0002447>);2.0;1.0;2.0;2;1.0;4.0
+ore_ont_7455.owl;SubClassOf(<http://purl.obolibrary.org/obo/ENSEMBL_YLR157C-A> <http://purl.obolibrary.org/obo/SO_0001217>);31.0;0.0;31.0;0;31.0;4.0
+ore_ont_11293.owl;SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_75766> <http://purl.obolibrary.org/obo/CHEBI_25212>);5.0;3.0;5.0;5;3.0;4.0
+ore_ont_2803.owl;SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_75766> <http://purl.obolibrary.org/obo/CHEBI_25212>);5.0;3.0;5.0;5;4.0;4.0
+ore_ont_7868.owl;SubClassOf(<http://purl.obolibrary.org/obo/GO_0048523> <http://purl.obolibrary.org/obo/GO_0065007>);7.0;7.0;7.0;7;7.0;4.0

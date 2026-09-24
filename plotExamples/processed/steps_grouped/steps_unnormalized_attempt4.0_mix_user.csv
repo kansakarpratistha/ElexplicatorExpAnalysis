@@ -1,0 +1,7 @@
+Example;Defect;mix_steps;mix_cost;user_steps;user_cost;mix_better;user_better
+ore_ont_8937.owl;SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC20> <http://www.absoluteiri.edu/RELAPPROXC41>);1;1.1047268203999618;1.0;1.1047268203999618;0;0
+ore_ont_11452.owl;SubClassOf(<http://purl.obolibrary.org/obo/MP_0005325> <http://purl.obolibrary.org/obo/MP_0002135>);1;0.76375;1.0;0.76375;0;0
+ore_ont_4732.owl;SubClassOf(<http://purl.obolibrary.org/obo/MP_0005563> <http://purl.obolibrary.org/obo/MP_0002447>);2;0.520113314447592;1.0;0.7461756373937677;0;1
+ore_ont_11293.owl;SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_75766> <http://purl.obolibrary.org/obo/CHEBI_25212>);5;0.7068027210884354;3.0;0.8506802721088436;0;1
+ore_ont_2803.owl;SubClassOf(<http://purl.obolibrary.org/obo/CHEBI_75766> <http://purl.obolibrary.org/obo/CHEBI_25212>);5;0.44;4.0;0.5688235294117647;0;1
+ore_ont_7868.owl;SubClassOf(<http://purl.obolibrary.org/obo/GO_0048523> <http://purl.obolibrary.org/obo/GO_0065007>);7;0.9989427855012324;7.0;0.9991621498929076;0;0

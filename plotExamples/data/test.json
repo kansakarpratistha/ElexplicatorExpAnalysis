@@ -1,0 +1,1128 @@
+{
+  "ore_ont_8937.owl" : [ {
+    "Defect" : "SubClassOf(<http://a.com/ontology#WorksOn> <http://a.com/ontology#ReifiedRelationshipClass>)",
+    "Axiom Count" : 84,
+    "Cost" : 1621.5000000000002,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3248,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3311,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3436,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3305,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3288,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC20> <http://www.absoluteiri.edu/RELAPPROXC41>)",
+    "Axiom Count" : 84,
+    "Cost" : 2090.2000000000003,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC41" : "no"
+      },
+      "cost" : 2309.1000000000004,
+      "repairTime" : 7738,
+      "evaluationTime" : 221,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC41" : "no"
+      },
+      "cost" : 2309.1000000000004,
+      "repairTime" : 5425,
+      "evaluationTime" : 127,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC41" : "no"
+      },
+      "cost" : 2309.1000000000004,
+      "repairTime" : 5332,
+      "evaluationTime" : 85,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC41" : "no"
+      },
+      "cost" : 2309.1000000000004,
+      "repairTime" : 5071,
+      "evaluationTime" : 90,
+      "attempts" : 4
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC41" : "no"
+      },
+      "cost" : 2309.1000000000004,
+      "repairTime" : 7467,
+      "evaluationTime" : 100,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC45> <http://www.absoluteiri.edu/RELAPPROXC41>)",
+    "Axiom Count" : 84,
+    "Cost" : 1041.7,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC41" : "no"
+      },
+      "cost" : 1147.2,
+      "repairTime" : 7268,
+      "evaluationTime" : 84,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC41" : "no"
+      },
+      "cost" : 1147.2,
+      "repairTime" : 5336,
+      "evaluationTime" : 85,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC41" : "no"
+      },
+      "cost" : 1147.2,
+      "repairTime" : 5327,
+      "evaluationTime" : 83,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC41" : "no"
+      },
+      "cost" : 1147.2,
+      "repairTime" : 5062,
+      "evaluationTime" : 77,
+      "attempts" : 2
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC41" : "no"
+      },
+      "cost" : 1147.2,
+      "repairTime" : 7428,
+      "evaluationTime" : 69,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC47> <http://www.absoluteiri.edu/RELAPPROXC21>)",
+    "Axiom Count" : 84,
+    "Cost" : 1397.6999999999998,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3023,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3015,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3023,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3011,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3004,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC21> <http://www.absoluteiri.edu/RELAPPROXC43>)",
+    "Axiom Count" : 84,
+    "Cost" : 1276.8999999999999,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC43" : "no"
+      },
+      "cost" : 1407.7999999999997,
+      "repairTime" : 7244,
+      "evaluationTime" : 72,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC43" : "no"
+      },
+      "cost" : 1407.7999999999997,
+      "repairTime" : 5278,
+      "evaluationTime" : 80,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC43" : "no"
+      },
+      "cost" : 1407.7999999999997,
+      "repairTime" : 5329,
+      "evaluationTime" : 64,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC43" : "no"
+      },
+      "cost" : 1407.7999999999997,
+      "repairTime" : 5065,
+      "evaluationTime" : 69,
+      "attempts" : 1
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC43" : "no"
+      },
+      "cost" : 1407.7999999999997,
+      "repairTime" : 7417,
+      "evaluationTime" : 63,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://a.com/ontology#Manages> <http://a.com/ontology#ReifiedRelationshipClass>)",
+    "Axiom Count" : 84,
+    "Cost" : 1552.5000000000002,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3044,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3015,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3019,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3021,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3005,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://a.com/ontology#ReifiedRelationshipClass> <http://www.absoluteiri.edu/RELAPPROXC43>)",
+    "Axiom Count" : 84,
+    "Cost" : 1500.7000000000005,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC43" : "no"
+      },
+      "cost" : 1656.3999999999996,
+      "repairTime" : 7258,
+      "evaluationTime" : 63,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC43" : "no"
+      },
+      "cost" : 1656.3999999999996,
+      "repairTime" : 5270,
+      "evaluationTime" : 75,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC43" : "no"
+      },
+      "cost" : 1656.3999999999996,
+      "repairTime" : 5360,
+      "evaluationTime" : 80,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC43" : "no"
+      },
+      "cost" : 1656.3999999999996,
+      "repairTime" : 5109,
+      "evaluationTime" : 64,
+      "attempts" : 3
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC43" : "no"
+      },
+      "cost" : 1656.3999999999996,
+      "repairTime" : 7410,
+      "evaluationTime" : 64,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC45> <http://www.absoluteiri.edu/RELAPPROXC21>)",
+    "Axiom Count" : 84,
+    "Cost" : 1216.7999999999997,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3054,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3046,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3009,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 3008,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 2999,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC21> <http://www.absoluteiri.edu/RELAPPROXC23>)",
+    "Axiom Count" : 84,
+    "Cost" : 536.5,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC23" : "no"
+      },
+      "cost" : 590.0,
+      "repairTime" : 7256,
+      "evaluationTime" : 66,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC23" : "no"
+      },
+      "cost" : 590.0,
+      "repairTime" : 5255,
+      "evaluationTime" : 79,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC23" : "no"
+      },
+      "cost" : 590.0,
+      "repairTime" : 5346,
+      "evaluationTime" : 74,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC23" : "no"
+      },
+      "cost" : 590.0,
+      "repairTime" : 5114,
+      "evaluationTime" : 60,
+      "attempts" : 1
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC23" : "no"
+      },
+      "cost" : 590.0,
+      "repairTime" : 7442,
+      "evaluationTime" : 64,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://www.absoluteiri.edu/RELAPPROXC21> <http://www.absoluteiri.edu/RELAPPROXC25>)",
+    "Axiom Count" : 84,
+    "Cost" : 1431.7000000000003,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC25" : "no"
+      },
+      "cost" : 1584.3999999999996,
+      "repairTime" : 7256,
+      "evaluationTime" : 72,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC25" : "no"
+      },
+      "cost" : 1584.3999999999996,
+      "repairTime" : 5259,
+      "evaluationTime" : 74,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC25" : "no"
+      },
+      "cost" : 1584.3999999999996,
+      "repairTime" : 5399,
+      "evaluationTime" : 73,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC25" : "no"
+      },
+      "cost" : 1584.3999999999996,
+      "repairTime" : 5092,
+      "evaluationTime" : 77,
+      "attempts" : 3
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "Repair reached!",
+        "⊤ ⊑ RELAPPROXC25" : "no"
+      },
+      "cost" : 1584.3999999999996,
+      "repairTime" : 7491,
+      "evaluationTime" : 81,
+      "attempts" : 0
+    } ]
+  } ],
+  "ore_ont_7455.owl" : [ {
+    "Defect" : "SubClassOf(<http://purl.obolibrary.org/obo/ENSEMBL_YLR157C-A> <http://purl.obolibrary.org/obo/SO_0001217>)",
+    "Axiom Count" : 61530,
+    "Cost" : 828537.2,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "NCBIGene_855816 ⊑ ENSEMBL_YPL257W-A" : "no",
+        "ENSEMBL_YER137C-A ⊑ NCBIGene_855816" : "yes",
+        "ENSEMBL_YLR157C-A ⊑ NCBIGene_851970" : "yes",
+        "NCBIGene_851970 ⊑ ENSEMBL_YPL257W-A" : "no",
+        "ENSEMBL_YDR365W-A ⊑ NCBIGene_856880" : "yes",
+        "NCBIGene_850854 ⊑ ENSEMBL_YPL257W-A" : "no",
+        "ENSEMBL_YLR157C-A ⊑ NCBIGene_856880" : "yes",
+        "NCBIGene_856880 ⊑ ENSEMBL_YDR365W-A" : "no",
+        "ENSEMBL_YER137C-A ⊑ NCBIGene_851970" : "yes",
+        "ENSEMBL_YDR365W-A ⊑ NCBIGene_850854" : "yes",
+        "ENSEMBL_YDR365W-A ⊑ SO_0001217" : "yes",
+        "ENSEMBL_YPL257W-A ⊑ NCBIGene_851970" : "yes",
+        "ENSEMBL_YDR365W-A ⊑ NCBIGene_851970" : "yes",
+        "ENSEMBL_YPL257W-A ⊑ NCBIGene_855816" : "yes",
+        "NCBIGene_856880 ⊑ ENSEMBL_YPL257W-A" : "no",
+        "ENSEMBL_YLR157C-A ⊑ NCBIGene_850854" : "yes",
+        "Status" : "Repair reached!",
+        "NCBIGene_850854 ⊑ ENSEMBL_YDR365W-A" : "no",
+        "NCBIGene_851970 ⊑ ENSEMBL_YDR365W-A" : "no",
+        "NCBIGene_855816 ⊑ ENSEMBL_YDR365W-A" : "no",
+        "ENSEMBL_YPL257W-A ⊑ NCBIGene_856880" : "yes",
+        "ENSEMBL_YER137C-A ⊑ SO_0001217" : "yes",
+        "NCBIGene_851970 ⊑ ENSEMBL_YER137C-A" : "no",
+        "ENSEMBL_YER137C-A ⊑ NCBIGene_850854" : "yes",
+        "ENSEMBL_YER137C-A ⊑ NCBIGene_856880" : "yes",
+        "ENSEMBL_YDR365W-A ⊑ NCBIGene_855816" : "yes",
+        "NCBIGene_856880 ⊑ ENSEMBL_YER137C-A" : "no",
+        "ENSEMBL_YPL257W-A ⊑ SO_0001217" : "yes",
+        "ENSEMBL_YPL257W-A ⊑ NCBIGene_850854" : "yes",
+        "NCBIGene_850854 ⊑ ENSEMBL_YER137C-A" : "no",
+        "ENSEMBL_YLR157C-A ⊑ NCBIGene_855816" : "yes",
+        "NCBIGene_855816 ⊑ ENSEMBL_YER137C-A" : "no"
+      },
+      "cost" : 828762.2999999999,
+      "repairTime" : 455189,
+      "evaluationTime" : 577830,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "Timeout"
+      },
+      "cost" : -1.0,
+      "repairTime" : -1,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "NCBIGene_855816 ⊑ ENSEMBL_YPL257W-A" : "yes",
+        "ENSEMBL_YER137C-A ⊑ NCBIGene_855816" : "no",
+        "ENSEMBL_YLR157C-A ⊑ NCBIGene_851970" : "yes",
+        "NCBIGene_851970 ⊑ ENSEMBL_YPL257W-A" : "yes",
+        "ENSEMBL_YDR365W-A ⊑ NCBIGene_856880" : "yes",
+        "NCBIGene_850854 ⊑ ENSEMBL_YPL257W-A" : "yes",
+        "ENSEMBL_YLR157C-A ⊑ NCBIGene_856880" : "yes",
+        "NCBIGene_856880 ⊑ ENSEMBL_YDR365W-A" : "yes",
+        "ENSEMBL_YER137C-A ⊑ NCBIGene_851970" : "yes",
+        "ENSEMBL_YDR365W-A ⊑ NCBIGene_850854" : "yes",
+        "ENSEMBL_YDR365W-A ⊑ SO_0001217" : "no",
+        "ENSEMBL_YPL257W-A ⊑ NCBIGene_851970" : "yes",
+        "ENSEMBL_YDR365W-A ⊑ NCBIGene_851970" : "yes",
+        "ENSEMBL_YPL257W-A ⊑ NCBIGene_855816" : "yes",
+        "NCBIGene_856880 ⊑ ENSEMBL_YPL257W-A" : "yes",
+        "ENSEMBL_YLR157C-A ⊑ NCBIGene_850854" : "yes",
+        "Status" : "Repair reached!",
+        "NCBIGene_850854 ⊑ ENSEMBL_YDR365W-A" : "yes",
+        "NCBIGene_851970 ⊑ ENSEMBL_YDR365W-A" : "yes",
+        "NCBIGene_855816 ⊑ ENSEMBL_YDR365W-A" : "yes",
+        "ENSEMBL_YPL257W-A ⊑ NCBIGene_856880" : "yes",
+        "ENSEMBL_YER137C-A ⊑ SO_0001217" : "no",
+        "NCBIGene_851970 ⊑ ENSEMBL_YER137C-A" : "no",
+        "ENSEMBL_YER137C-A ⊑ NCBIGene_850854" : "yes",
+        "ENSEMBL_YER137C-A ⊑ NCBIGene_856880" : "yes",
+        "ENSEMBL_YDR365W-A ⊑ NCBIGene_855816" : "yes",
+        "NCBIGene_856880 ⊑ ENSEMBL_YER137C-A" : "yes",
+        "ENSEMBL_YPL257W-A ⊑ SO_0001217" : "no",
+        "ENSEMBL_YPL257W-A ⊑ NCBIGene_850854" : "yes",
+        "NCBIGene_850854 ⊑ ENSEMBL_YER137C-A" : "yes",
+        "ENSEMBL_YLR157C-A ⊑ NCBIGene_855816" : "yes",
+        "NCBIGene_855816 ⊑ ENSEMBL_YER137C-A" : "yes"
+      },
+      "cost" : 828764.1,
+      "repairTime" : 124868,
+      "evaluationTime" : 492097,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "NCBIGene_855816 ⊑ ENSEMBL_YPL257W-A" : "yes",
+        "ENSEMBL_YER137C-A ⊑ NCBIGene_855816" : "no",
+        "ENSEMBL_YLR157C-A ⊑ NCBIGene_851970" : "no",
+        "NCBIGene_851970 ⊑ ENSEMBL_YPL257W-A" : "no",
+        "ENSEMBL_YDR365W-A ⊑ NCBIGene_856880" : "yes",
+        "NCBIGene_850854 ⊑ ENSEMBL_YPL257W-A" : "no",
+        "ENSEMBL_YLR157C-A ⊑ NCBIGene_856880" : "no",
+        "NCBIGene_856880 ⊑ ENSEMBL_YDR365W-A" : "no",
+        "ENSEMBL_YER137C-A ⊑ NCBIGene_851970" : "yes",
+        "ENSEMBL_YDR365W-A ⊑ NCBIGene_850854" : "no",
+        "ENSEMBL_YDR365W-A ⊑ SO_0001217" : "no",
+        "ENSEMBL_YPL257W-A ⊑ NCBIGene_851970" : "no",
+        "ENSEMBL_YDR365W-A ⊑ NCBIGene_851970" : "no",
+        "ENSEMBL_YPL257W-A ⊑ NCBIGene_855816" : "yes",
+        "NCBIGene_856880 ⊑ ENSEMBL_YPL257W-A" : "no",
+        "ENSEMBL_YLR157C-A ⊑ NCBIGene_850854" : "no",
+        "Status" : "Repair reached!",
+        "NCBIGene_850854 ⊑ ENSEMBL_YDR365W-A" : "no",
+        "NCBIGene_851970 ⊑ ENSEMBL_YDR365W-A" : "no",
+        "NCBIGene_855816 ⊑ ENSEMBL_YDR365W-A" : "no",
+        "ENSEMBL_YPL257W-A ⊑ NCBIGene_856880" : "yes",
+        "ENSEMBL_YER137C-A ⊑ SO_0001217" : "no",
+        "NCBIGene_851970 ⊑ ENSEMBL_YER137C-A" : "yes",
+        "ENSEMBL_YER137C-A ⊑ NCBIGene_850854" : "no",
+        "ENSEMBL_YER137C-A ⊑ NCBIGene_856880" : "no",
+        "ENSEMBL_YDR365W-A ⊑ NCBIGene_855816" : "no",
+        "NCBIGene_856880 ⊑ ENSEMBL_YER137C-A" : "yes",
+        "ENSEMBL_YPL257W-A ⊑ SO_0001217" : "no",
+        "ENSEMBL_YPL257W-A ⊑ NCBIGene_850854" : "no",
+        "NCBIGene_850854 ⊑ ENSEMBL_YER137C-A" : "no",
+        "ENSEMBL_YLR157C-A ⊑ NCBIGene_855816" : "yes",
+        "NCBIGene_855816 ⊑ ENSEMBL_YER137C-A" : "yes"
+      },
+      "cost" : 828763.2,
+      "repairTime" : 10776,
+      "evaluationTime" : 462621,
+      "attempts" : 4
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "Timeout"
+      },
+      "cost" : -1.0,
+      "repairTime" : -1,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }]
+    },
+    {
+    "Defect" : "SubClassOf(<http://purl.obolibrary.org/obo/CHROMOSOME-4932_IV> <http://purl.obolibrary.org/obo/SO_0000340>)",
+    "Axiom Count" : 61530,
+    "Cost" : 944702.6999999997,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4462,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 5173,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4626,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4671,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4542,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://purl.obolibrary.org/obo/CHROMOSOME-4932_XVI> <http://purl.obolibrary.org/obo/SO_0000340>)",
+    "Axiom Count" : 61530,
+    "Cost" : 628234.7999999999,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4446,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4639,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4542,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4589,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4679,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://purl.obolibrary.org/obo/CHROMOSOME-4932_II> <http://purl.obolibrary.org/obo/SO_0000340>)",
+    "Axiom Count" : 61530,
+    "Cost" : 839213.3999999999,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4390,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4306,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4392,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4306,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4238,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://purl.obolibrary.org/obo/CHROMOSOME-4932_VII> <http://purl.obolibrary.org/obo/SO_0000340>)",
+    "Axiom Count" : 61530,
+    "Cost" : 698561.0,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4955,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4887,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4726,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4598,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4670,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://purl.obolibrary.org/obo/CHROMOSOME-4932_XII> <http://purl.obolibrary.org/obo/SO_0000340>)",
+    "Axiom Count" : 61530,
+    "Cost" : 839213.3999999999,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4496,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4522,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4558,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4554,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4563,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://purl.obolibrary.org/obo/CHROMOSOME-4932_XIV> <http://purl.obolibrary.org/obo/SO_0000340>)",
+    "Axiom Count" : 61530,
+    "Cost" : 768887.2,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4585,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4571,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4535,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4592,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4800,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://purl.obolibrary.org/obo/CHROMOSOME-4932_XV> <http://purl.obolibrary.org/obo/SO_0000340>)",
+    "Axiom Count" : 61530,
+    "Cost" : 804050.2999999999,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4574,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4371,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4639,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4702,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4447,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://purl.obolibrary.org/obo/CHROMOSOME-4932_XIII> <http://purl.obolibrary.org/obo/SO_0000340>)",
+    "Axiom Count" : 61530,
+    "Cost" : 804050.2999999999,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4590,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4554,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4468,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4578,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4583,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    } ]
+  }, {
+    "Defect" : "SubClassOf(<http://purl.obolibrary.org/obo/CHROMOSOME-4932_X> <http://purl.obolibrary.org/obo/SO_0000340>)",
+    "Axiom Count" : 61530,
+    "Cost" : 804050.2999999999,
+    "Evaluation" : [ {
+      "optionName" : "option1",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4516,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option2",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4845,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "option3",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4497,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "user",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4545,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    }, {
+      "optionName" : "mix",
+      "answersMap" : {
+        "Status" : "No selection!"
+      },
+      "cost" : -1.0,
+      "repairTime" : 4486,
+      "evaluationTime" : 0,
+      "attempts" : 0
+    } ]
+  }]
+}

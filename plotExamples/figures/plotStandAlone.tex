@@ -1,0 +1,244 @@
+\documentclass[border=0pt]{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{babel}
+\usepackage{stmaryrd}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example}
+\newtheorem{lemma}{Lemma}
+\newtheorem*{claim}{Claim}
+
+\usepackage{tikz}
+\usetikzlibrary{shapes,snakes,trees}
+
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{xspace}
+\usepackage{hyperref}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{pgfplots}
+\usepackage{csquotes}
+\usepackage{framed}
+\usepackage{subcaption}
+\usepackage[active,tightpage]{preview}
+\usepackage{pgfplotstable}
+\PreviewEnvironment{tikzpicture}
+
+\input{../macros.tex}
+\input{macro-graphs.tex}
+
+\def\totalExamples{327} %1728
+% \def\basepath{C:\\Users\\prati\\Desktop\\ResultsAnalysis\\plotExamples\\processed_unnormalized\\steps_grouped\\}
+\def\basepath{C:\\Users\\kansa\\Downloads\\ElexplicatorExpAnalysis\\ElexplicatorExpAnalysis-main\\plotExamples\\processed_normalized\\steps_ungrouped\\}
+
+\begin{document}
+
+%--------------------
+	% Comparison of different metrics - Relative scaled
+	% \foreach \file/\xPrefix/\yPrefix in {
+	% 	pairwise_rel_scaled_normalized_option1_option2.csv/Entailment Probability/Hierarchy Difference,
+	% 	pairwise_rel_scaled_normalized_option1_option3.csv/Entailment Probability/Hamming Distance,
+	% 	pairwise_rel_scaled_normalized_option1_mix.csv/Entailment Probability/Mix,
+	% 	pairwise_rel_scaled_normalized_option1_user.csv/Entailment Probability/User,
+	% 	pairwise_rel_scaled_normalized_option2_option3.csv/Hierarchy Difference/Hamming Distance,
+	% 	pairwise_rel_scaled_normalized_option2_mix.csv/Hierarchy Difference/Mix,
+	% 	pairwise_rel_scaled_normalized_option2_user.csv/Hierarchy Difference/User,
+	% 	pairwise_rel_scaled_normalized_option3_mix.csv/Hamming Distance/Mix,
+	% 	pairwise_rel_scaled_normalized_option3_user.csv/Hamming Distance/User,
+	% 	pairwise_rel_scaled_normalized_mix_user.csv/Mix/User
+	% } {
+	% 	\edef\filepath{\basepath\file}
+
+	% 	\columnsum{\filepath}{4}{\totalX}
+	% 	\columnsum{\filepath}{5}{\totalY}
+	% 	\rowCount{\filepath}{\totalRows}
+
+	% 	\begin{preview}
+	% 		\plotData
+	% 			{Relative Scaled Scores \pgfmathprintnumber{\totalRows}/\pgfmathprintnumber{\totalExamples}}
+	% 			{\filepath}
+	% 			{\xPrefix (\pgfmathprintnumber{\totalX})}
+	% 			{\yPrefix (\pgfmathprintnumber{\totalY})}
+	% 			{1.5}{0.05}{2}{3}
+	% 	\end{preview}
+	% }
+
+	%---------------------
+	% Comparison of different metrics - Deviation from the original ontology score
+	% \foreach \file/\xPrefix/\yPrefix in {
+	% 	pairwise_deviation_original_normalized_option1_option2.csv/Entailment Probability/Hierarchy Difference,
+	% 	pairwise_deviation_original_normalized_option1_option3.csv/Entailment Probability/Hamming Distance,
+	% 	pairwise_deviation_original_normalized_option1_mix.csv/Entailment Probability/Mix,
+	% 	pairwise_deviation_original_normalized_option1_user.csv/Entailment Probability/User,
+	% 	pairwise_deviation_original_normalized_option2_option3.csv/Hierarchy Difference/Hamming Distance,
+	% 	pairwise_deviation_original_normalized_option2_mix.csv/Hierarchy Difference/Mix,
+	% 	pairwise_deviation_original_normalized_option2_user.csv/Hierarchy Difference/User,
+	% 	pairwise_deviation_original_normalized_option3_mix.csv/Hamming Distance/Mix,
+	% 	pairwise_deviation_original_normalized_option3_user.csv/Hamming Distance/User,
+	% 	pairwise_deviation_original_normalized_mix_user.csv/Mix/User
+	% } {
+	% 	\edef\filepath{\basepath\file}
+
+	% 	\columnsum{\filepath}{4}{\totalX}
+	% 	\columnsum{\filepath}{5}{\totalY}
+	% 	\rowCount{\filepath}{\totalRows}
+
+	% 	\begin{preview}
+	% 		\plotData
+	% 			{Score Deviation from Original \pgfmathprintnumber{\totalRows}/\pgfmathprintnumber{\totalExamples}}
+	% 			{\filepath}
+	% 			{\xPrefix (\pgfmathprintnumber{\totalX})}
+	% 			{\yPrefix (\pgfmathprintnumber{\totalY})}
+	% 			{100}{5}{2}{3}
+	% 	\end{preview}
+	% }
+	% % \resizebox{0.31\textwidth}{!}{
+	% % 	% \columnsum{basepath\\dev_original_unnormalized\\pairwise_dev_original_unnormalized_option1_option2.csv}{4}{\totalX}
+	% % 	% \columnsum{basepath\\dev_original_unnormalized\\pairwise_dev_original_unnormalized_option1_option2.csv}{5}{\totalY}
+	% % 	% \plotData{Deviation from Original}{basepath\\dev_original_unnormalized\\pairwise_dev_original_unnormalized_option1_option2.csv}{EntailmentProbability(\pgfmathprintnumber{\totalX})}{ClassHierarchyDiff(\pgfmathprintnumber{\totalY})}{100}{5}{2}{3}
+	% % 	%Comparison result: option1, option2 	
+	% % }
+	% % \hfill
+
+	
+	%---------------------
+	% Comparison of different metrics - Min-Max Normalized
+
+	% \resizebox{0.31\textwidth}{!}{
+	% 	\columnsum{C:\\Users\\prati\\Desktop\\ResultsAnalysis\\plotExamples\\processed\\minmax_scaled_unnormalized\\pairwise_minmax_scaled_unnormalized_option1_option2.csv}{4}{\totalX}
+	% 	\columnsum{C:\\Users\\prati\\Desktop\\ResultsAnalysis\\plotExamples\\processed\\minmax_scaled_unnormalized\\pairwise_minmax_scaled_unnormalized_option1_option2.csv}{5}{\totalY}
+	% 	\plotData{Score (Min-Max Normalized)}{C:\\Users\\prati\\Desktop\\ResultsAnalysis\\plotExamples\\processed\\minmax_scaled_unnormalized\\pairwise_minmax_scaled_unnormalized_option1_option2.csv}{EntailmentProbability(\pgfmathprintnumber{\totalX})}{ClassHierarchyDiff(\pgfmathprintnumber{\totalY})}{1}{0.05}{2}{3}
+	% 	%Comparison result: option1, option2 	
+	% }
+	% \hfill
+
+	%---------------------
+	% Comparison of different metrics - Steps (per rerun)
+
+	% \foreach \file/\xPrefix/\yPrefix/\attempt in {
+	% 	steps_normalized_attempt1.0_option1_user.csv/Entailment Probability/User/1,
+	% 	steps_normalized_attempt1.0_option2_user.csv/Hierarchy Difference/User/1,
+	% 	steps_normalized_attempt1.0_option3_user.csv/Hamming Distance/User/1,
+	% 	steps_normalized_attempt1.0_mix_user.csv/Mix/User/1,
+	% 	steps_normalized_attempt2.0_option1_user.csv/Entailment Probability/User/2,
+	% 	steps_normalized_attempt2.0_option2_user.csv/Hierarchy Difference/User/2,
+	% 	steps_normalized_attempt2.0_option3_user.csv/Hamming Distance/User/2,
+	% 	steps_normalized_attempt2.0_mix_user.csv/Mix/User/2,
+	% 	steps_normalized_attempt3.0_option1_user.csv/Entailment Probability/User/3,
+	% 	steps_normalized_attempt3.0_option2_user.csv/Hierarchy Difference/User/3,
+	% 	steps_normalized_attempt3.0_option3_user.csv/Hamming Distance/User/3,
+	% 	steps_normalized_attempt3.0_mix_user.csv/Mix/User/3,
+	% 	steps_normalized_attempt4.0_option1_user.csv/Entailment Probability/User/4,
+	% 	steps_normalized_attempt4.0_option2_user.csv/Hierarchy Difference/User/4,
+	% 	steps_normalized_attempt4.0_option3_user.csv/Hamming Distance/User/4,
+	% 	steps_normalized_attempt4.0_mix_user.csv/Mix/User/4
+	% } {
+	% 	\edef\filepath{\basepath\file}
+
+	% 	\columnsum{\filepath}{6}{\totalX}
+	% 	\columnsum{\filepath}{7}{\totalY}
+	% 	\columnmean{\filepath}{3}{\costX}
+	% 	\columnmean{\filepath}{5}{\costY}
+	% 	\rowCount{\filepath}{\totalRows}
+
+	% 	\begin{preview}
+	% 		\plotData
+	% 			{Steps (\pgfmathprintnumber{\attempt}) \pgfmathprintnumber{\totalRows}/\pgfmathprintnumber{\totalExamples}}
+	% 			{\filepath}
+	% 			{\xPrefix (\pgfmathprintnumber{\totalX}) score:\pgfmathprintnumber{\costX}}
+	% 			{\yPrefix (\pgfmathprintnumber{\totalY}) score:\pgfmathprintnumber{\costY}}
+	% 			{29}{1}{2}{4}
+	% 	\end{preview}
+	% }
+
+	
+	% \columnsum{C:\\Users\\prati\\Desktop\\ResultsAnalysis\\plotExamples\\processed\\steps_grouped\\steps_unnormalized_attempt4.0_mix_user.csv}{6}{\totalX}
+	% \columnsum{C:\\Users\\prati\\Desktop\\ResultsAnalysis\\plotExamples\\processed\\steps_grouped\\steps_unnormalized_attempt4.0_mix_user.csv}{7}{\totalY}
+
+	% \columnmean{C:\\Users\\prati\\Desktop\\ResultsAnalysis\\plotExamples\\processed\\steps_grouped\\steps_unnormalized_attempt4.0_mix_user.csv}{3}{\costX}
+	% \columnmean{C:\\Users\\prati\\Desktop\\ResultsAnalysis\\plotExamples\\processed\\steps_grouped\\steps_unnormalized_attempt4.0_mix_user.csv}{5}{\costY}
+	
+	% \rowCount{C:\\Users\\prati\\Desktop\\ResultsAnalysis\\plotExamples\\processed\\steps_grouped\\steps_unnormalized_attempt4.0_mix_user.csv}{\totalRows}
+	
+	% \plotData{Steps (Attempt 4) \pgfmathprintnumber{\totalRows}/\pgfmathprintnumber{\totalExamples}}{C:\\Users\\prati\\Desktop\\ResultsAnalysis\\plotExamples\\processed\\steps_grouped\\steps_unnormalized_attempt4.0_mix_user.csv}{Mix (\pgfmathprintnumber{\totalX}) score:\pgfmathprintnumber{\costX}}{User (\pgfmathprintnumber{\totalY}) score:\pgfmathprintnumber{\costY}}{29}{1}{2}{4}
+	
+	%---------------------
+	% Z-Scaled comparison of different metrics 
+	
+	% \foreach \file/\xPrefix/\yPrefix in {
+	% 	pairwise_z_scaled_normalized_option1_option2.csv/Entailment Probability/Hierarchy Difference,
+	% 	pairwise_z_scaled_normalized_option1_option3.csv/Entailment Probability/Hamming Distance,
+	% 	pairwise_z_scaled_normalized_option1_mix.csv/Entailment Probability/Mix,
+	% 	pairwise_z_scaled_normalized_option1_user.csv/Entailment Probability/User,
+	% 	pairwise_z_scaled_normalized_option2_option3.csv/Hierarchy Difference/Hamming Distance,
+	% 	pairwise_z_scaled_normalized_option2_mix.csv/Hierarchy Difference/Mix,
+	% 	pairwise_z_scaled_normalized_option2_user.csv/Hierarchy Difference/User,
+	% 	pairwise_z_scaled_normalized_option3_mix.csv/Hamming Distance/Mix,
+	% 	pairwise_z_scaled_normalized_option3_user.csv/Hamming Distance/User,
+	% 	pairwise_z_scaled_normalized_mix_user.csv/Mix/User
+	% } {
+	% 	\edef\filepath{\basepath\file}
+
+	% 	\columnsum{\filepath}{4}{\totalX}
+	% 	\columnsum{\filepath}{5}{\totalY}
+	% 	\rowCount{\filepath}{\totalRows}
+
+	% 	\begin{preview}
+	% 		\plotData
+	% 			{Score Z-Score Normalized \pgfmathprintnumber{\totalRows}/\pgfmathprintnumber{\totalExamples}}
+	% 			{\filepath}
+	% 			{\xPrefix (\pgfmathprintnumber{\totalX})}
+	% 			{\yPrefix (\pgfmathprintnumber{\totalY})}
+	% 			{3}{0.25}{2}{3}
+	% 	\end{preview}
+	% }
+
+	% \resizebox{0.31\textwidth}{!}{
+	% 	\columnsum{C:\\Users\\prati\\Desktop\\ResultsAnalysis\\plotExamples\\processed\\z_scaled_unnormalized\\pairwise_z_scaled_unnormalized_option1_option2.csv}{4}{\totalX}
+	% 	\columnsum{C:\\Users\\prati\\Desktop\\ResultsAnalysis\\plotExamples\\processed\\z_scaled_unnormalized\\pairwise_z_scaled_unnormalized_option1_option2.csv}{5}{\totalY}
+	% 	\plotData{Score (Z-Scaled)}{C:\\Users\\prati\\Desktop\\ResultsAnalysis\\plotExamples\\processed\\z_scaled_unnormalized\\pairwise_z_scaled_unnormalized_option1_option2.csv}{EntailmentProbability(\pgfmathprintnumber{\totalX})}{ClassHierarchyDiff(\pgfmathprintnumber{\totalY})}{3}{0.25}{2}{3}
+	% 	%Comparison result: option1, option2 	
+	% }
+	% \hfill
+
+	%---------------------
+	% Steps comparison of different metrics 
+
+	\foreach \file/\xPrefix/\yPrefix in {
+		steps_normalized_option1_option2.csv/Entailment Probability/Hierarchy Difference,
+		steps_normalized_option1_option3.csv/Entailment Probability/Hamming Distance,
+		steps_normalized_option1_mix.csv/Entailment Probability/Mix,
+		steps_normalized_option1_user.csv/Entailment Probability/User,
+		steps_normalized_option2_option3.csv/Hierarchy Difference/Hamming Distance,
+		steps_normalized_option2_mix.csv/Hierarchy Difference/Mix,
+		steps_normalized_option2_user.csv/Hierarchy Difference/User,
+		steps_normalized_option3_mix.csv/Hamming Distance/Mix,
+		steps_normalized_option3_user.csv/Hamming Distance/User,
+		steps_normalized_mix_user.csv/Mix/User
+	} {
+		\edef\filepath{\basepath\file}
+
+		\columnsum{\filepath}{6}{\totalX}
+		\columnsum{\filepath}{7}{\totalY}
+		\columnmean{\filepath}{3}{\costX}
+		\columnmean{\filepath}{5}{\costY}
+		\rowCount{\filepath}{\totalRows}
+
+		\begin{preview}
+			\plotData
+				{Steps \pgfmathprintnumber{\totalRows}/\pgfmathprintnumber{\totalExamples}}
+				{\filepath}
+				{\xPrefix (\pgfmathprintnumber{\totalX}) score:\pgfmathprintnumber{\costX}}
+				{\yPrefix (\pgfmathprintnumber{\totalY}) score:\pgfmathprintnumber{\costY}}
+				{29}{1}{2}{4}
+		\end{preview}
+	}
+
+	% \def\myfile{plotExamples/processed/benchmark/benchmark.csv}
+	% \plotBarPlot{C:/Users/prati/Desktop/ResultsAnalysis/plotExamples/processed/benchmark/benchmark.csv}{Runtime}
+
+\end{document}

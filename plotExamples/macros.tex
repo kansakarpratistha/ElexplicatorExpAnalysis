@@ -1,0 +1,142 @@
+
+%
+\newcommand{\stefan}[2][inline]{\ttodo{#1}{Stefan}{yellow}{#2}}
+\newcommand{\christian}[2][inline]{\ttodo{#1}{Christian}{orange}{#2}}
+\newcommand{\philipp}[2][inline]{\ttodo{#1}{Max}{blue!20}{#2}}
+\newcommand{\markus}[2][inline]{\ttodo{#1}{Markus}{lightgray}{#2}}
+%
+\newcommand{\ttodo}[4]{\ifthenelse{\equal{#1}{inline}}{\todo[author=#2,color=#3]{#4}}{\todo[color=#3]{#2: #4}}}
+
+\newcommand{\sideConColor}[1]{\textcolor{black!40!white}{#1}}
+
+\def\define#1#2#3%
+{%
+\renewcommand*{\do}[1]{%
+ \expandafter\newcommand\csname
+ #1\endcsname{#2}
+}
+\docsvlist{#3}
+}
+
+%
+\define{#1}
+{{\textsc{#1}}\xspace}
+{Elk,Lethe,Fame,Evonne,Evee,HermiT,Spass,Capi,GraphStream,Nemo,Konclude,Sequoia,Envelope,Textbook}
+\newcommand{\LIBRARYNAME}{\Evee-\textsc{libs}\xspace}
+\newcommand{\PLUGINNAME}{\Evee-\textsc{protege}\xspace}
+
+\newcommand{\LetheAbduction}{\textsc{Lethe-Abduction}\xspace}
+
+\binoppenalty10000
+\relpenalty10000
+\widowpenalty10000
+\clubpenalty10000
+
+%
+\newcommand{\wlg}{w.l.o.g.\ }
+\newcommand{\Wlog}{W.l.o.g.\ }
+\newcommand{\wrt}{w.r.t.\ }
+\newcommand{\ie}{i.e.,\ }
+\newcommand{\eg}{e.g.,\ }
+\newcommand{\cf}{cf.\ }
+\newcommand{\vs}{vs.\ }
+\newcommand{\aka}{a.k.a.\ }
+
+\newcommand{\NC}{\ensuremath{\textsf{N}_\textsf{C}}\xspace}
+\newcommand{\NR}{\ensuremath{\textsf{N}_\textsf{R}}\xspace}
+
+%
+\define{#1mc}
+{{\ensuremath{\mathcal{#1}}}\xspace}
+{A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z}
+
+\define{#1}
+{{\textsc{#1}}\xspace}
+{NP,coNP,PSpace,ExpTime,ExpSpace}
+
+\newcommand{\PTime}{\textsc{P}\xspace}
+
+\define{#1}
+{{\ensuremath{\mathcal{#1}}}\xspace}
+{ALC,EL,ALCOI,ALCH,ELH,ELI,SROIQ}
+
+\newcommand{\cn}[1]{\textsf{#1}}
+
+
+\newcommand{\DLLite}{\textit{DL-Lite}\xspace}
+\newcommand{\ELHb}{\ensuremath{\mathcal{ELH}_\bot}\xspace}
+\newcommand{\ELp}{\ensuremath{\mathcal{EL}^+}\xspace}
+\newcommand{\ELpb}{\ensuremath{\mathcal{EL}^+_\bot}\xspace}
+\newcommand{\ELpp}{\ensuremath{\mathcal{EL}^{++}}\xspace}
+\newcommand{\ALCOImu}{\ensuremath{\ALCOI\mu}\xspace}
+
+\newcommand{\Heur}{\texttt{HEUR}\xspace}
+\newcommand{\SymMin}{\texttt{SYMB}\xspace}
+\newcommand{\SizeMin}{\texttt{SIZE}\xspace}
+\newcommand{\Extr}{\texttt{EXTR}\xspace}
+
+
+%
+%
+%
+\newcommand{\nonent}{non-entailment\xspace}
+\newcommand{\MisEnt}{Missing Entailment\xspace}
+\newcommand{\misent}{missing entailment\xspace}
+\newcommand{\Sig}{Vocabulary\xspace}
+\newcommand{\sig}{vocabulary\xspace}
+\newcommand{\Obs}{Missing Entailment\xspace}
+\newcommand{\obs}{missing entailment\xspace}
+\newcommand{\explanationServiceInterface}{INonEntailmentExplanationService\xspace}
+\newcommand{\explanationGenerationListener}{IExplanationGenerationListener\xspace}
+\newcommand{\explainerInterface}{IOWLNonEntailmentExplainer\xspace}
+
+\newcommand{\OBS}{\ensuremath{\Pmc}\xspace}
+
+\newcommand{\evee}{Evee\xspace}
+\newcommand{\plugin}{plug-in\xspace}
+\newcommand{\Plugin}{Plug-in\xspace}
+\newcommand{\plugins}{plug-ins\xspace}
+\newcommand{\Plugins}{Plug-ins\xspace}
+\newcommand{\Protege}{Prot{\'e}g{\'e}\xspace}
+
+
+\newcommand{\nonentAxiom}{\ensuremath{\eta}\xspace}
+
+\newcommand{\arev}{\textsf{$\alpha$}\xspace}
+\newcommand{\brev}{\textsf{$\beta$}\xspace}
+\newcommand{\crev}{\textsf{$\Delta$}\xspace}
+\newcommand{\drev}{\textsf{$\bar{\Delta}$}\xspace}
+
+
+\newcommand{\highlighttt}[1]{
+    \vspace{-7pt}
+    \begin{center}
+        \texttt{#1}
+    \end{center}
+    \vspace{-7pt}
+}
+
+\newcommand{\ce}{counterexample\xspace}
+\newcommand{\Ce}{Counterexample\xspace}
+\newcommand{\cegen}{counterexample generation\xspace}
+\newcommand{\Cegen}{Counterexample generation\xspace}
+\newcommand{\addDisj}{Add disjointnesses\xspace}
+\newcommand{\recompute}{Recompute example\xspace}
+\newcommand{\refresh}{Refresh example\xspace}
+\newcommand{\removeDisj}{Remove disjointnesses\xspace}
+\newcommand{\addToOnt}{Add all to ontology\xspace}
+\newcommand{\subclass}{SpicyAmerican\xspace}
+\newcommand{\superclass}{SpicyPizza\xspace}
+
+
+\newcommand{\opfont}[1]{\text{\sf{#1}}} %
+\newcommand{\ltuple}{\langle}
+\newcommand{\rtuple}{\rangle}
+\newcommand{\tuple}[1]{\ltuple{#1}\rtuple}
+
+\newcommand{\cut}[1]{\opfont{cut}(#1)}
+\newcommand{\dcw}[1]{\opfont{cw}(#1)}
+
+\newcommand{\blue}[1]{\color{blue}#1\color{black}\xspace}
+
+\newcommand{\mypar}[1]{\smallskip\noindent\textbf{#1.}\ }
